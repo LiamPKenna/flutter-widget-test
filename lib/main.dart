@@ -5,5 +5,5 @@ void main() {
   runApp(MaterialApp(
     title: "Simple Layouts",
     home: Home(),
-    ));
+  ));
 }
