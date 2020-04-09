@@ -6,14 +6,52 @@ class Home extends StatelessWidget {
     return Center(
       child: Container(
         alignment: Alignment.center,
+        padding: EdgeInsets.only(top:30.0, left:10.0),
         color: Colors.deepOrangeAccent,
-        child: Text('Pizza', 
-          textDirection: TextDirection.ltr,
-          style: TextStyle(
-            fontSize: 80.0,
-            decoration: TextDecoration.none
+        child: Column(children: <Widget>[
+          Row(children: <Widget>[
+          Text('Margherita', 
+            textDirection: TextDirection.ltr,
+            style: TextStyle(
+              fontSize: 30.0,
+              decoration: TextDecoration.none,
+              fontFamily: 'Raleway',
+              fontWeight: FontWeight.w300
+            ),
           ),
-        )
+          Expanded(
+            child:Text('Tomato, Mozzarella, Bazil', 
+            textDirection: TextDirection.ltr,
+            style: TextStyle(
+              fontSize: 20.0,
+              decoration: TextDecoration.none,
+              fontFamily: 'Raleway',
+              fontWeight: FontWeight.w300
+            ),
+          ))
+        ],),
+        Row(children: <Widget>[
+          Text('Marinara', 
+            textDirection: TextDirection.ltr,
+            style: TextStyle(
+              fontSize: 30.0,
+              decoration: TextDecoration.none,
+              fontFamily: 'Raleway',
+              fontWeight: FontWeight.w300
+            ),
+          ),
+          Expanded(
+            child:Text('Tomato, Garlic', 
+            textDirection: TextDirection.ltr,
+            style: TextStyle(
+              fontSize: 20.0,
+              decoration: TextDecoration.none,
+              fontFamily: 'Raleway',
+              fontWeight: FontWeight.w300
+            ),
+          ))
+        ],)
+        ])
       )
     );
   }
