@@ -14,6 +14,7 @@ class Home extends StatelessWidget {
             textDirection: TextDirection.ltr,
             style: TextStyle(
               fontSize: 30.0,
+              color: Colors.black,
               decoration: TextDecoration.none,
               fontFamily: 'Raleway',
               fontWeight: FontWeight.w300
@@ -50,10 +51,22 @@ class Home extends StatelessWidget {
               fontWeight: FontWeight.w300
             ),
           ))
-        ],)
-        ])
+        ],
+        ),
+        PizzaImageWidget(),
+        ]
+      )
       )
     );
   }
 
+}
+
+class PizzaImageWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    AssetImage pizzaAsset = AssetImage('images/pizza.png');
+    Image image = Image(image: pizzaAsset, width: 400.0, height: 400.0, );
+    return Container(child: image);
+  }
 }
